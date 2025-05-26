@@ -4,5 +4,14 @@
   },
   "about.qmd": {
     "about.html": "5751a663"
+  },
+  "posts/c_02.ipynb": {
+    "c_02.html": "036c5239"
+  },
+  "posts/c_01.ipynb": {
+    "c_01.html": "59a2d13d"
+  },
+  "posts/c_03.ipynb": {
+    "c_03.html": "e5b32dee"
   }
 }
