@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -175,7 +175,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -206,9 +206,51 @@ window.Quarto = {
 <table class="quarto-listing-table table">
 <thead>
 <tr>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
+<th>
+Author
+</th>
 </tr>
 </thead>
 <tbody class="list">
+<tr data-index="0" data-listing-date-sort="1748012400000" data-listing-file-modified-sort="1748248622993" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="182" data-listing-title-sort="1. 승강기안전 인증 현황" data-listing-filename-sort="c_01.ipynb">
+<td>
+<span class="listing-date">May 24, 2025</span>
+</td>
+<td>
+<a href="./posts/c_01.html" class="title listing-title">1. 승강기안전 인증 현황</a>
+</td>
+<td>
+<span class="listing-author">sw1kwon </span>
+</td>
+</tr>
+<tr data-index="1" data-listing-date-sort="1748012400000" data-listing-file-modified-sort="1748248618565" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195" data-listing-title-sort="2. 국내 승강기 보유 현황" data-listing-filename-sort="c_02.ipynb">
+<td>
+<span class="listing-date">May 24, 2025</span>
+</td>
+<td>
+<a href="./posts/c_02.html" class="title listing-title">2. 국내 승강기 보유 현황</a>
+</td>
+<td>
+<span class="listing-author">sw1kwon </span>
+</td>
+</tr>
+<tr data-index="2" data-listing-date-sort="1748012400000" data-listing-file-modified-sort="1748248613101" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="693" data-listing-title-sort="3. 승강기 검사 결과" data-listing-filename-sort="c_03.ipynb">
+<td>
+<span class="listing-date">May 24, 2025</span>
+</td>
+<td>
+<a href="./posts/c_03.html" class="title listing-title">3. 승강기 검사 결과</a>
+</td>
+<td>
+<span class="listing-author">sw1kwon </span>
+</td>
+</tr>
 </tbody>
 </table>
 <div class="listing-no-matching d-none">
